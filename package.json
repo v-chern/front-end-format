@@ -1,0 +1,19 @@
+{
+  "name": "test_proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Karaul!\"",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "lint": "stylelint **/*.css",
+    "lintfix": "stylelint **/*.css --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.2.5",
+    "stylelint": "^16.6.0"
+  }
+}
