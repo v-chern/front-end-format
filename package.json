@@ -5,15 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Karaul!\"",
-    "format": "prettier --write './**/*.{html,css,js}'",
-    "check": "prettier --check './**/*.{html,css,js}'",
-    "lint": "stylelint **/*.css",
-    "lintfix": "stylelint **/*.css --fix"
+    "format": "prettier --write './src/**/*.{html,css,js}'",
+    "check": "prettier --check './src/**/*.{html,css,js}'",
+    "lint": "stylelint './src/**/*.css'",
+    "lintfix": "stylelint ./src/**/*.css --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "prettier": "^3.2.5",
-    "stylelint": "^16.6.0"
+  "devDependencies": {
+    "prettier": "^3.3.0",
+    "stylelint": "^16.6.1"
   }
 }
