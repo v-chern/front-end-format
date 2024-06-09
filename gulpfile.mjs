@@ -19,11 +19,18 @@ function html() {
                 .pipe(bs.reload({stream: true}));
 }
 
+function globals() {
+    return gulp.src('src/styles/*.css')
+                .pipe(plumber())
+                .pipe(gulp.dest('dist/styles/'))
+                .pipe(bs.reload({stream: true}));
+}
+
 function css() {
-    return gulp.src('src/blocks/**/*.css')
+    return gulp.src('src/styles/blocks/**/*.css')
                 .pipe(plumber())
                 .pipe(concat('bundle.css'))
-                .pipe(gulp.dest('dist/'))
+                .pipe(gulp.dest('dist/styles/'))
                 .pipe(bs.reload({stream: true}));
 }
 
@@ -52,7 +59,8 @@ function clean() {
 
 function watchFiles() {
     gulp.watch(['src/**/*.html'], html);
-    gulp.watch(['src/blocks/**/*.css'], css);
+    gulp.watch(['src/styles/*.css'], globals);
+    gulp.watch(['src/styles/blocks/**/*.css'], css);
     gulp.watch(['src/fonts/**/*.{css,woff,woff2}'], fonts);
     gulp.watch(['src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}'], images);
 }
@@ -65,7 +73,7 @@ function serve() {
     });
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, fonts, images));
+const build = gulp.series(clean, gulp.parallel(html, globals, css, fonts, images));
 const watchapp = gulp.parallel(build, watchFiles, serve);
 
 export { build };

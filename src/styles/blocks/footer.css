@@ -1,0 +1,17 @@
+.footer {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .footer__quote {
+    margin-inline-end: 10px;
+    width: 75%;
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: var(--tilte-font);
+    font-size: 1.5em;
+    text-align: end;
+  }

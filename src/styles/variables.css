@@ -1,0 +1,6 @@
+:root {
+    --title-font: 'Franklin Gothic Medium', sans-serif;
+    --text-font: 'Franklin Gothic Medium', sans-serif;
+
+    --bg-image: url(../images/bg_dotted.svg);
+}

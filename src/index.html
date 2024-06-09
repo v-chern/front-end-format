@@ -3,38 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bundle.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/bundle.css" />
     <title>Document</title>
   </head>
   <body class="page">
     <header class="header">
-      <h1>Выбери свою сторону</h1>
+      <h1 class="header__title">Выбери свою сторону</h1>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu_link header__menu_link-active" href="">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu_link" href="">О Проекте</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu_link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main">
-      <div class="container">
-        <article class="card">
-          <img src="./images/in-a-peace.jpg" class="card-image" alt="текст" />
-          <h2 class="card-title">Заголовок карточки 1</h2>
-          <p class="card-text">
+      <div class="content">
+        <article class="content__card">
+          <img src="./images/in-a-peace.jpg" class="content__card_image" alt="текст" />
+          <h2 class="content__card_title">Заголовок карточки 1</h2>
+          <p class="content__card_text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
             ullam nemo fugiat laboriosam quos qui adipisci assumenda, ad amet
             cupiditate voluptate ab vel a dolorem numquam! Nisi dicta voluptates
             mollitia?
           </p>
+          <p class="content__card_text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus inventore fugit reiciendis. Cumque temporibus ducimus expedita aliquid dicta, necessitatibus earum! Mollitia eligendi nihil, voluptatum repellat consectetur quaerat soluta laudantium?
+          </p>
         </article>
-        <article class="card">
-          <img src="./images/in-a-rush.jpg" class="card-image" alt="текст" />
-          <h2 class="card-title">Заголовок карточки 2</h2>
-          <p class="card-text">
-            !Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+        <article class="content__card">
+          <img src="./images/in-a-rush.jpg" class="content__card_image" alt="текст" />
+          <h2 class="content__card_title">Заголовок карточки 2</h2>
+          <p class="content__card_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
             possimus nulla velit libero totam, non quis quam praesentium saepe
             tenetur sit itaque fugit optio? Sint itaque provident totam porro
             ea.
+          </p>
+          <p class="content__card_text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam minus nobis quibusdam optio quam pariatur aperiam quis. Consectetur tempora exercitationem minima quasi quos dolorum, quas minus quia consequuntur voluptatum nisi.
           </p>
         </article>
       </div>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <q class="footer__quote">
+        Lorem ipsum dolor sit amet consectetur
+      </q>
+    </footer>
   </body>
 </html>

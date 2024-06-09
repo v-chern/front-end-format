@@ -1,0 +1,46 @@
+.main {
+    width: 100%;
+    min-height: 60%;
+}
+
+.content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+}
+
+.content__card {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding-inline-start: 2%;
+    padding-inline-end: 2%;
+    padding-block-start: 2%;
+    padding-block-end: 2%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content__card_image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.content__card_title {
+    font-family: var(--title-font);
+}
+
+.content__card_text {
+    font-family: var(--main-font);
+}
+
+@media (width <= 768px) {
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+}
