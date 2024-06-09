@@ -1,4 +1,6 @@
 .page {
   background-image: url(../images/bg_dotted.svg);
   background-repeat: repeat;
+  width: 1024px;
+  margin: auto;
 }
