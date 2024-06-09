@@ -1,6 +1,6 @@
 .main {
     width: 100%;
-    min-height: 60%;
+    margin-block: 20px;
 }
 
 .content {
@@ -17,7 +17,6 @@
     padding-inline-end: 2%;
     padding-block-start: 2%;
     padding-block-end: 2%;
-
     display: flex;
     flex-direction: column;
     gap: 10px;
