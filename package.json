@@ -24,6 +24,7 @@
     "gulp-concat-css": "^1.2.0",
     "gulp-imagemin": "^9.1.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
     "prettier": "^3.3.0",
     "stylelint": "^16.6.1"
   }
